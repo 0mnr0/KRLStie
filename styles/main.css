@@ -1,0 +1,6 @@
+body {background: #101010}
+
+.topDivider {position: relative}
+
+.topDivider .imagesElements {position: absolute; right: 15%}
+.topDivider .imagesElements img.main {height: 75%}
