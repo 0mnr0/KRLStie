@@ -14,14 +14,14 @@ body {background: #101010; color: white; font-family: Gotham}
 .borderLine {position: fixed; height: 60px; top: 0px; border: solid 0px red; width: calc( 100% - 80px); padding: 10px; margin: 15px 40px 0px; z-index: 4}
 .borderLine p {margin-bottom: 0px; width: fit-content}
 .borderLine img.mbcLogo {height: 100%; margin-right: 6%; scale: 1.4}
-.borderLine span.paneOption {margin-right: 20px; font-size: 18px}
+.borderLine span.paneOption {margin-right: 20px; font-size: 18px; cursor: pointer}
 .borderLine span.paneOption.bigMargin {margin-right: 100px}
 .borderLine span.paneOption img.arrow {aspect-ration: 1/1; width: 13px}
 .borderLine .telegramContact {position: absolute; right: 0px; top: 5px; font-size: 18px}
 .borderLine .telegramContact img {width: 50px;}
 
 .contentCard {position: relative; padding: 1px 40px; }
-.contentCard.firstWithGradient {background: linear-gradient(170deg, #202020 0%, #101010 23%, #000 100%); width: 100%;  height: 100%; }
+.contentCard.firstWithGradient {background: linear-gradient(170deg, #202020 0%, #101010 23%, #000 100%); width: 100%;  min-height: 75%; }
 
 .flexBox, .flex {display: flex}
 
@@ -33,3 +33,16 @@ body {background: #101010; color: white; font-family: Gotham}
 .elementThatUserSee .LearnMoreButton {margin-top: 30px}
 
 .elementThatUserSee .LearnMoreButton img { background: #131313; aspect-ratio: 1/1; padding: 12px; width: 50px; border: solid 1px #4d4d4d; border-radius: 200px; margin-right: 20px }
+
+.whatsTheCost {position: relative}
+.whatsTheCost img.bg {width: 100%; object-fit: cover; height: 140px}
+.whatsTheCost img.ball {position: absolute; left: 0px}
+.whatsTheCost img.cursor {left: 95%; bottom: -40px; position: absolute; z-index: 2}
+.whatsTheCost img.ball1 {left: 5%; bottom: 0px;}
+.whatsTheCost img.ball2 {left: 10%; top: 10%; scale: 1.2}
+.whatsTheCost img.ball3 {left: 60%; top: 55%}
+.whatsTheCost .text {left: 0px; top: 50%; margin-left: 12px; transform: translateY(-50%); position: absolute; width: 70%; text-align: center; font-size: xx-large}
+.whatsTheCost .button {left: 70%; top: 50%; transform: translateY(-50%); position: absolute; text-align: center; font-size: x-large; padding: 15px;
+						background: linear-gradient(90deg, #f4b41a 0%, #f7c820 100%); border: solid 2px #F9D423; border-radius: 15px;
+						box-shadow: 10px 8px 5px #E7610299; cursor: pointer; transition: all .2s}
+.whatsTheCost .button:hover {scale: 1.01}
