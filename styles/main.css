@@ -1,3 +1,7 @@
+::-webkit-scrollbar {width: 6px; background: #666; }
+::-webkit-scrollbar-thumb { background-color: #f09f13; -webkit-border-radius: 1ex; }
+
+
 @font-face {
     font-family: Gotham;
     src: url('\GothamPro.ttf');
@@ -20,8 +24,10 @@ body {background: #101010; color: white; font-family: Gotham}
 .borderLine .telegramContact {position: absolute; right: 0px; top: 5px; font-size: 18px}
 .borderLine .telegramContact img {width: 50px;}
 
-.contentCard {position: relative; padding: 1px 40px; }
+.contentCard.firstWithGradient {position: relative; padding: 1px 40px; }
+.contentCard:not(.firstWithGradient) .elementThatUserSee {margin-top: 0px; width: 100%}
 .contentCard.firstWithGradient {background: linear-gradient(170deg, #202020 0%, #101010 23%, #000 100%); width: 100%;  min-height: 75%; }
+
 
 .flexBox, .flex {display: flex}
 
@@ -46,3 +52,26 @@ body {background: #101010; color: white; font-family: Gotham}
 						background: linear-gradient(90deg, #f4b41a 0%, #f7c820 100%); border: solid 2px #F9D423; border-radius: 15px;
 						box-shadow: 10px 8px 5px #E7610299; cursor: pointer; transition: all .2s}
 .whatsTheCost .button:hover {scale: 1.01}
+
+
+.contentCard img.consultingImage {width: 50%; height: 100%}
+
+.contentCard.consultingDiv .elementThatUserSee {display: flex;}
+.contentCard.consultingDiv .elementThatUserSee .textBlockMain {
+	display: flex;
+	flex-direction: column;
+}
+	
+	
+.contentCard.consultingDiv .elementThatUserSee .textBlock {
+	background: linear-gradient(#000000 0 0) padding-box, linear-gradient(130deg, #00000000,  #00000000,  #00000000, #ffffff) border-box; 
+	margin: 0px 10%; height: auto; top: 50%; position: relative; transform: translate(0px, -50%);
+	border: solid 2px transparent; border-radius: 50px; padding: 20px}
+	
+.contentCard.consultingDiv .elementThatUserSee .textBlock .TitleText{ width: 100%; font-size: 68px; display: block; margin-bottom: 16px; }
+.contentCard.consultingDiv .elementThatUserSee .textBlock .MiniTitleText{ width: 100%; font-size:26px; display: block;  margin-bottom: 14px;  }
+.contentCard.consultingDiv .elementThatUserSee .textBlock .Text { color: #E6E6E6;  }
+.contentCard.consultingDiv .elementThatUserSee .textBlock .Text.Underline{ color: #E6E6E6; border-bottom: 1px solid #E6E6E6; }
+.contentCard.consultingDiv {
+    background: linear-gradient(90deg, #050505, black);
+}
